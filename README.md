@@ -6,5 +6,6 @@ Request:
 - Second, into to the directory firts_example with CDM (window's)
 - Third, run the npm install --save
 - Four and finally, run the project with: node ./bin/www
+- Go to the explorer  (Firefox or Chrome) and write -> localhost:3000 <-
 - Enjoy =)
 
