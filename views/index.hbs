@@ -1,0 +1,107 @@
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand page-scroll" href="#page-top">{{titulo}}</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="page-scroll" href="#about">{{items_menu.about}}</a></li>
+                <li><a class="page-scroll" href="#services">{{items_menu.services}}</a><li>
+                <li><a class="page-scroll" href="#portfolio">{{items_menu.portfolio}}</a></li>
+                <li><a class="page-scroll" href="#contact">{{items_menu.contact}}</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading">{{header.start_title}}</h1>
+            <hr>
+            <p>{{header.description}}</p>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">{{header.boton_text}}</a>
+        </div>
+    </div>
+</header>
+
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">{{about.title}}</h2>
+                <hr class="light">
+                <p class="text-faded">{{about.description}}</p>
+                <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">{{about.services}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Servicios</h2>
+              <hr class="primary">
+          </div>
+      </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      {{#each services}}
+        <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+                <i class="fa fa-4x {{icono}} text-primary sr-icons"></i>
+                <h3>{{title}}</h3>
+                <p class="text-muted">{{description}}</p>
+            </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  </section>
+
+  <section class="no-padding" id="portfolio">
+      <div class="container-fluid">
+          <div class="row no-gutter popup-gallery">
+            {{#each portfolio}}
+              <div class="col-lg-4 col-sm-6">
+                  <a href="{{image_href}}" class="portfolio-box">
+                      <img src="{{image}}" class="img-responsive" alt="">
+                      <div class="portfolio-box-caption">
+                          <div class="portfolio-box-caption-content">
+                              <div class="project-category text-faded">
+                                  {{category}}
+                              </div>
+                              <div class="project-name">
+                                   {{project_name}}
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+            {{/each}}
+        </div>
+      </div>
+  </section>
+
+  <section id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                  <h2 class="section-heading">{{contact.title}}</h2>
+                  <hr class="primary">
+                  <p>{{contact.description}}</p>
+              </div>
+              <div class="col-lg-4 col-lg-offset-2 text-center">
+                  <i class="fa fa-phone fa-3x sr-contact"></i>
+                  <p>{{contact.phone}}</p>
+              </div>
+              <div class="col-lg-4 text-center">
+                  <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                  <p>{{contact.email}}</p>
+              </div>
+          </div>
+      </div>
+  </section>
