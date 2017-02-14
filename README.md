@@ -1,4 +1,4 @@
-# handlebars_node_bootstrap
+# TEMPLATE WITH (Handlebars + NodeJs + Bootstrap)
 Project with template bootstrap and adapted to the framework handlebars. Run with node in the port: 3000.
 
 Request:
