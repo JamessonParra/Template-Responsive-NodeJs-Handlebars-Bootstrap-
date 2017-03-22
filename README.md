@@ -1,7 +1,7 @@
 # TEMPLATE WITH (Handlebars + NodeJs + Bootstrap)
 Project with template bootstrap and adapted to the framework handlebars. Run with node in the port: 3000.
 
-Tap firsts:
+First steps:
 - You need install nodejS 
 - Go to the directory with CDM (window's)
 - Run the npm install --save
