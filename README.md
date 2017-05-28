@@ -9,4 +9,4 @@ First steps:
 - Go to the explorer  (Firefox or Chrome) and write -> localhost:3000 <-
 - Enjoy =)
 
-Demo there ->  52.52.244.232:3000
+Demo there ->  https://goo.gl/jTJhKX
